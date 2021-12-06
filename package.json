@@ -1,0 +1,38 @@
+{
+  "name": "instafeed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node src/index.js ",
+    "start": "nodemon --exec babel-node src/index.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow-models/mobilenet": "^2.1.0",
+    "@tensorflow/tfjs-converter": "^3.11.0",
+    "@tensorflow/tfjs-core": "^3.11.0",
+    "axios": "^0.21.4",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.5.1",
+    "express-validator": "^6.12.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.8",
+    "multer": "^1.4.3",
+    "nanoid": "^3.1.28",
+    "nodemailer": "^6.6.5",
+    "rate-limiter-flexible": "^2.3.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.15.6"
+  }
+}
