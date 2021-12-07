@@ -27,9 +27,15 @@ export const userLogin = async (req, res) => {
 
       // save user token
       user.token = token;
+      delete user.password;
 
       // user
-      return res.status(200).json(user);
+      return res.status(200).json({
+        _id: user.id,
+        email: user.email,
+        username: user.username,
+        token: user.token
+      });
     }
     return res.status(400).send("Invalid Credentials");
   } catch (err) {
